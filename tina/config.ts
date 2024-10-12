@@ -1,11 +1,15 @@
+import { type } from "os";
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
-const branch =
-  process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
-  "development";
+// Define your available branches or fallbacks
+const branches = [
+  process.env.GITHUB_BRANCH,
+  process.env.VERCEL_GIT_COMMIT_REF,
+  process.env.HEAD,
+];
+
+// Default to "main" if no branch is specified
+const branch = branches.find(branch => branch) || "main";
 
 export default defineConfig({
   branch,
