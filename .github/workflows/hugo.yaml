@@ -5,9 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - development
       - main
-      - production
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -62,8 +60,8 @@ jobs:
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: development
-          HUGO_ENV: development
+          HUGO_ENVIRONMENT: main
+          HUGO_ENV: main
           TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
