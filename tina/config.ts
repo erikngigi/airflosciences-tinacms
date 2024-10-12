@@ -7,7 +7,7 @@ import { defineConfig } from "tinacms";
 //   process.env.HEAD ||
 //   "main";
 
-const branch = "main, development, production";
+const branch = "main";
 
 export default defineConfig({
   branch,
