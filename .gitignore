@@ -1,4 +1,7 @@
 /public/
+/.github/
+/static/admin/
+/tina/
 
 node_modules
 .env
