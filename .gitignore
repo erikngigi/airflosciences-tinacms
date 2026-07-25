@@ -2,6 +2,6 @@
 /.github/
 /static/admin/
 /tina/
-**hugo_stats.json
+hugo_stats.json
 node_modules
 .env
