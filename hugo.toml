@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://airflosciences.dev.ericngigi.com/"
+baseURL = ""                      # Add you domain here (i.e., https://airflosciences.com/)
 title = "Airflo Sciences Limited"
 theme = "airflosciences-theme"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -9,7 +9,7 @@ paginate = 9 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # google analytics
-googleAnalytics = "G-0DQ8QV1X6V" # example: UA-123456-78, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+googleAnalytics = "" # example: UA-123456-78, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
 # disqus short name
 # disqusShortname = "" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 # disable language
@@ -118,16 +118,16 @@ preloader = "images/giphy-1.gif" # use jpg, png, svg or gif format.
 [params.subscription]
 enable = false
 # mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"                                                           # replace this code with yours
+mailchimp_form_action = "" # replace this url with yours
+mailchimp_form_name = ""   # replace this code with yours
 
 # google map
 [params.map]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDubttriSgVL4NZh7R5cbRcxLU8x_8hGOs"
-map_latitude = "-1.286389"
-map_longitude = "36.817223"
-map_marker = "images/marker.png"                                                                 # marker size 37*55 px
+gmap_api = ""
+map_latitude = ""
+map_longitude = ""
+map_marker = "images/marker.png" # marker size 37*55 px
 
 # cookies
 [params.cookies]
@@ -140,10 +140,10 @@ expire_days = 2
 # icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
 # link = ""
 
-[[params.social]]
-title = "twitter"
-icon = "ti-twitter-alt"                     # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/AirfloSciences"
+# [[params.social]]
+# title = "twitter"
+# icon = "ti-twitter-alt"                     # themify icon : https://themify.me/themify-icons
+# link = "#"
 
 # [[params.social]]
 # title = "instagram"
